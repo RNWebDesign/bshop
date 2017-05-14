@@ -92,7 +92,7 @@ if ( ! function_exists( 'shop_isle_footer_copyright_and_socials' ) ) {
 						if ( isset( $shop_isle_site_info_hide ) && $shop_isle_site_info_hide != 1 ) {
 
 							echo '<p class="shop-isle-poweredby-box">';
-								printf( __( '%1$s powered by %2$s', 'shop-isle' ), sprintf( '<a class="shop-isle-poweredby" href="https://themeisle.com/themes/shop-isle/" rel="nofollow">%s</a>', esc_html__( 'Shop Isle', 'shop-isle' ) ), sprintf( '<a class="shop-isle-poweredby" href="http://wordpress.org/" rel="nofollow">%s</a>', esc_html__( 'WordPress', 'shop-isle' ) ) );
+								printf( __( '%1$s ontwikkeld door %2$s', 'shop-isle' ), esc_html__( 'Website', 'shop-isle' ) , sprintf( '<a class="shop-isle-poweredby" href="http://rndesign.be/" rel="nofollow">%s</a>', esc_html__( 'RNDesign', 'shop-isle' ) ) );
 							echo '</p>';
 
 						}
