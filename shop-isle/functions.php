@@ -1,10 +1,13 @@
 <?php
 /**
- * Main file
+ * Main functions file
+ *
+ * @package WordPress
+ * @subpackage Shop Isle
  */
 
 /**
- * Initialize all the things. 
+ * Initialize all the things.
  */
 require get_template_directory() . '/inc/init.php';
 

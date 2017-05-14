@@ -11,6 +11,7 @@ if ( ! function_exists( 'shop_isle_product_categories' ) ) {
 	/**
 	 * Display Product Categories
 	 * Hooked into the `homepage` action in the homepage template
+	 *
 	 * @since  1.0.0
 	 * @return void
 	 */
@@ -24,7 +25,7 @@ if ( ! function_exists( 'shop_isle_product_categories' ) ) {
 				'child_categories' 	=> 0,
 				'orderby' 			=> 'name',
 				'title'				=> __( 'Product Categories', 'shop-isle' ),
-				) );
+			) );
 
 			echo '<section class="shop-isle-product-section shop-isle-product-categories">';
 
@@ -45,6 +46,7 @@ if ( ! function_exists( 'shop_isle_recent_products' ) ) {
 	/**
 	 * Display Recent Products
 	 * Hooked into the `homepage` action in the homepage template
+	 *
 	 * @since  1.0.0
 	 * @return void
 	 */
@@ -56,7 +58,7 @@ if ( ! function_exists( 'shop_isle_recent_products' ) ) {
 				'limit' 			=> 4,
 				'columns' 			=> 4,
 				'title'				=> __( 'Recent Products', 'shop-isle' ),
-				) );
+			) );
 
 			echo '<section class="shop-isle-product-section shop-isle-recent-products">';
 
@@ -77,6 +79,7 @@ if ( ! function_exists( 'shop_isle_featured_products' ) ) {
 	/**
 	 * Display Featured Products
 	 * Hooked into the `homepage` action in the homepage template
+	 *
 	 * @since  1.0.0
 	 * @return void
 	 */
@@ -90,7 +93,7 @@ if ( ! function_exists( 'shop_isle_featured_products' ) ) {
 				'orderby'			=> 'date',
 				'order'				=> 'desc',
 				'title'				=> __( 'Featured Products', 'shop-isle' ),
-				) );
+			) );
 
 			echo '<section class="shop-isle-product-section shop-isle-featured-products">';
 
@@ -111,6 +114,7 @@ if ( ! function_exists( 'shop_isle_popular_products' ) ) {
 	/**
 	 * Display Popular Products
 	 * Hooked into the `homepage` action in the homepage template
+	 *
 	 * @since  1.0.0
 	 * @return void
 	 */
@@ -122,7 +126,7 @@ if ( ! function_exists( 'shop_isle_popular_products' ) ) {
 				'limit' 			=> 4,
 				'columns' 			=> 4,
 				'title'				=> __( 'Top Rated Products', 'shop-isle' ),
-				) );
+			) );
 
 			echo '<section class="shop-isle-product-section shop-isle-popular-products">';
 
@@ -143,6 +147,7 @@ if ( ! function_exists( 'shop_isle_on_sale_products' ) ) {
 	/**
 	 * Display On Sale Products
 	 * Hooked into the `homepage` action in the homepage template
+	 *
 	 * @since  1.0.0
 	 * @return void
 	 */
@@ -154,7 +159,7 @@ if ( ! function_exists( 'shop_isle_on_sale_products' ) ) {
 				'limit' 			=> 4,
 				'columns' 			=> 4,
 				'title'				=> __( 'On Sale', 'shop-isle' ),
-				) );
+			) );
 
 			echo '<section class="shop-isle-product-section shop-isle-on-sale-products">';
 
@@ -175,6 +180,7 @@ if ( ! function_exists( 'shop_isle_homepage_content' ) ) {
 	/**
 	 * Display homepage content
 	 * Hooked into the `homepage` action in the homepage template
+	 *
 	 * @since  1.0.0
 	 * @return  void
 	 */
@@ -191,6 +197,7 @@ if ( ! function_exists( 'shop_isle_social_icons' ) ) {
 	/**
 	 * Display social icons
 	 * If the subscribe and connect plugin is active, display the icons.
+	 *
 	 * @link http://wordpress.org/plugins/subscribe-and-connect/
 	 * @since 1.0.0
 	 */
@@ -206,6 +213,7 @@ if ( ! function_exists( 'shop_isle_social_icons' ) ) {
 if ( ! function_exists( 'shop_isle_get_sidebar' ) ) {
 	/**
 	 * Display sidebar
+	 *
 	 * @uses get_sidebar()
 	 * @since 1.0.0
 	 */
@@ -218,10 +226,11 @@ if ( ! function_exists( 'shop_isle_get_sidebar' ) ) {
 if ( ! function_exists( 'shop_isle_get_sidebar_shop_archive' ) ) {
 	/**
 	 * Display sidebar
+	 *
 	 * @uses get_sidebar()
 	 * @since 1.0.0
 	 */
 	function shop_isle_get_sidebar_shop_archive() {
-		get_sidebar('shop-archive');
+		get_sidebar( 'shop-archive' );
 	}
 }

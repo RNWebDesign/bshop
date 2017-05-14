@@ -1,6 +1,9 @@
 <?php
 /**
  * The template for displaying all single posts.
+ *
+ * @package WordPress
+ * @subpackage Shop Isle
  */
 
 get_header(); ?>
@@ -20,12 +23,14 @@ get_header(); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 
 							<?php
-							
+
 							do_action( 'shop_isle_single_post_before' );
 
 							get_template_part( 'content', 'single' );
 
 							/**
+							 * After single post hook.
+							 *
 							 * @hooked shop_isle_post_nav - 10
 							 */
 							do_action( 'shop_isle_single_post_after' );

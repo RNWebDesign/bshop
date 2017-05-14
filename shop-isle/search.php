@@ -2,6 +2,8 @@
 /**
  * The template for displaying search results pages.
  *
+ * @package WordPress
+ * @subpackage Shop Isle
  */
 
 get_header(); ?>
@@ -11,9 +13,9 @@ get_header(); ?>
 		<!-- Post single start -->
 			<?php
 			$shop_isle_header_image = get_header_image();
-				if( !empty($shop_isle_header_image) ):
-					echo '<section class="page-header-module module bg-dark" data-background="'.esc_url($shop_isle_header_image).'">';
-				else:
+			if ( ! empty( $shop_isle_header_image ) ) :
+				echo '<section class="page-header-module module bg-dark" data-background="' . esc_url( $shop_isle_header_image ) . '">';
+				else :
 					echo '<section class="page-header-module module bg-dark">';
 				endif;
 			?>
@@ -21,15 +23,19 @@ get_header(); ?>
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-6 col-sm-offset-3">
-								<h1 class="module-title font-alt"><?php printf( __( 'Search Results for: %s', 'shop-isle' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+								<h1 class="module-title font-alt"><?php printf(
+									/* translators: s: Search term. */
+								        __( 'Search Results for: %s', 'shop-isle' ),
+									'<span>' . get_search_query() . '</span>'
+								); ?></h1>
 							</div>
 						</div>
 					</div><!-- .container -->
 			
 			
-			<?php	
+			<?php
 				echo '</section>';
-				
+
 				echo '<section class="module">';
 			?>
 			<div class="container">

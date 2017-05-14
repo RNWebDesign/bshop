@@ -2,12 +2,14 @@
 /**
  * Template functions used for the site comments.
  *
- * @package shop-isle
+ * @package WordPress
+ * @subpackage Shop Isle
  */
 
 if ( ! function_exists( 'shop_isle_display_comments' ) ) {
 	/**
-	 * display comments
+	 * Display comments
+	 *
 	 * @since  1.0.0
 	 */
 	function shop_isle_display_comments() {
@@ -20,7 +22,8 @@ if ( ! function_exists( 'shop_isle_display_comments' ) ) {
 
 if ( ! function_exists( 'shop_isle_comment' ) ) {
 	/**
-	 * comment template
+	 * Comment template
+	 *
 	 * @since 1.0.0
 	 */
 	function shop_isle_comment( $comment, $args, $depth ) {
@@ -36,8 +39,9 @@ if ( ! function_exists( 'shop_isle_comment' ) ) {
 		<div class="comment-body">
 			<div class="comment-meta commentmetadata">
 				<div class="comment-author vcard">
-					<?php echo get_avatar( $comment, 128 ); ?>
-					<?php printf( __( '<cite class="fn">%s</cite>', 'shop-isle' ), get_comment_author_link() ); ?>
+					<?php echo get_avatar( $comment, 128 );
+					/* translators: s: Comment author link */
+					printf( __( '<cite class="fn">%s</cite>', 'shop-isle' ), get_comment_author_link() ); ?>
 				</div>
 				<?php if ( '0' == $comment->comment_approved ) : ?>
 					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'shop-isle' ); ?></em>
@@ -56,7 +60,11 @@ if ( ! function_exists( 'shop_isle_comment' ) ) {
 				</a>
 				<div class="reply">
 					 &nbsp; - &nbsp;
-					<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+					<?php comment_reply_link( array_merge( $args, array(
+						'add_below' => $add_below,
+						'depth' => $depth,
+						'max_depth' => $args['max_depth'],
+					) ) ); ?>
 					<?php edit_comment_link( __( 'Edit', 'shop-isle' ), '  ', '' ); ?>
 				</div>
 			</div>
@@ -67,4 +75,4 @@ if ( ! function_exists( 'shop_isle_comment' ) ) {
 		<?php endif; ?>
 	<?php
 	}
-}
+}// End if().

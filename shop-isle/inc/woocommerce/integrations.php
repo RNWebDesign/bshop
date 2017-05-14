@@ -7,6 +7,7 @@
 
 /**
  * Styles & Scripts
+ *
  * @return void
  */
 function shop_isle_woocommerce_integrations_scripts() {

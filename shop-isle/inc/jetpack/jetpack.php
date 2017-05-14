@@ -3,6 +3,8 @@
  * Jetpack Compatibility File
  * See: http://jetpack.me/
  *
+ * @package WordPress
+ * @subpackage Shop Isle
  */
 
 /**

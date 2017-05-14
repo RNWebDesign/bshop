@@ -4,6 +4,8 @@
  *
  * Template Name: Full width, no title (SiteOrigin Page builder Template)
  *
+ * @package WordPress
+ * @subpackage Shop Isle
  */
 
 get_header(); ?>
@@ -22,6 +24,8 @@ get_header(); ?>
 
 					<?php
 					/**
+					 * Top of content hook.
+					 *
 					 * @hooked woocommerce_breadcrumb - 10
 					 */
 					do_action( 'shop_isle_content_top' ); ?>
@@ -36,6 +40,8 @@ get_header(); ?>
 
 						<?php
 						/**
+						 * Bottom of content hook.
+						 *
 						 * @hooked shop_isle_display_comments - 10
 						 */
 						do_action( 'shop_isle_page_after' );

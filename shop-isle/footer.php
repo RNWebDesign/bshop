@@ -4,11 +4,13 @@
  *
  * Contains the closing of the #content div and all content after
  *
+ * @package WordPress
+ * @subpackage Shop Isle
  */
 ?>
 <?php do_action( 'shop_isle_before_footer' ); ?>
 
-	<?php do_action('shop_isle_footer'); ?>
+	<?php do_action( 'shop_isle_footer' ); ?>
 	
 	</div>
 	<!-- Wrapper end -->

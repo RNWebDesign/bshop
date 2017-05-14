@@ -5,7 +5,8 @@
  * The area of the page that contains both current comments
  * and the comment form.
  *
- * @package shop-isle
+ * @package WordPress
+ * @subpackage Shop Isle
  */
 
 /*
@@ -23,7 +24,9 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
-				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'shop-isle' ),
+				printf(
+					/* translators: 1: number of comments 2: post name */
+				        _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'shop-isle' ),
 				number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
 		</h2>
@@ -52,9 +55,9 @@ if ( post_password_required() ) {
 			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'shop-isle' ) ); ?></div>
 			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'shop-isle' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
-		<?php endif; // check for comment navigation ?>
+		<?php endif; ?>
 
-	<?php endif; // have_comments() ?>
+	<?php endif; ?>
 
 	<?php if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 		<p class="no-comments"><?php _e( 'Comments are closed.', 'shop-isle' ); ?></p>

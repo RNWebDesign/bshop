@@ -21,24 +21,24 @@
 
 	<!-- Preloader -->
 	<?php
-	
+
 	/* Preloader */
-	if(is_front_page() && !is_customize_preview() && get_option( 'show_on_front' ) != 'page' ):
-	
-		$shop_isle_disable_preloader = get_theme_mod('shop_isle_disable_preloader');
-		
-		if( isset($shop_isle_disable_preloader) && ($shop_isle_disable_preloader != 1) ):
-		
+	if ( is_front_page() && ! is_customize_preview() && get_option( 'show_on_front' ) != 'page' ) :
+
+		$shop_isle_disable_preloader = get_theme_mod( 'shop_isle_disable_preloader' );
+
+		if ( isset( $shop_isle_disable_preloader ) && ($shop_isle_disable_preloader != 1) ) :
+
 			echo '<div class="page-loader">';
-				echo '<div class="loader">'.__('Loading...','shop-isle').'</div>';
+				echo '<div class="loader">' . __( 'Loading...','shop-isle' ) . '</div>';
 			echo '</div>';
-		
+
 		endif;
-		
+
 	endif;
-	
-	
-	
+
+
+
 	?>
 	
 	<?php do_action( 'shop_isle_header' ); ?>
