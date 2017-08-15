@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ShopIsle PRO 2.2.16\n"
 "Report-Msgid-Bugs-To: https://github.com/Codeinwp/shop-isle-pro/issues\n"
-"POT-Creation-Date: 2017-05-05 14:19:42+00:00\n"
+"POT-Creation-Date: 2017-05-22 11:50:36+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,8 +37,8 @@ msgstr ""
 #: inc/customizer/features/feature-frontpage-slider-section-controls.php:49
 #: inc/customizer/features/feature-frontpage-slider-section-controls.php:56
 #: inc/customizer/features/feature-frontpage-slider-section-controls.php:63
-#: inc/functions/setup.php:347 inc/functions/setup.php:354
-#: inc/functions/setup.php:361 inc/sections/shop_isle_big_title_section.php:22
+#: inc/functions/setup.php:348 inc/functions/setup.php:355
+#: inc/functions/setup.php:362 inc/sections/shop_isle_big_title_section.php:29
 #: inc/sections/shop_isle_slider_section.php:27
 #: inc/sections/shop_isle_slider_section.php:34
 #: inc/sections/shop_isle_slider_section.php:41 index.php:129
@@ -485,8 +485,8 @@ msgstr ""
 #: inc/customizer/features/feature-frontpage-slider-section-controls.php:47
 #: inc/customizer/features/feature-frontpage-slider-section-controls.php:54
 #: inc/customizer/features/feature-frontpage-slider-section-controls.php:61
-#: inc/functions/setup.php:345 inc/functions/setup.php:352
-#: inc/functions/setup.php:359 inc/sections/shop_isle_slider_section.php:25
+#: inc/functions/setup.php:346 inc/functions/setup.php:353
+#: inc/functions/setup.php:360 inc/sections/shop_isle_slider_section.php:25
 #: inc/sections/shop_isle_slider_section.php:32
 #: inc/sections/shop_isle_slider_section.php:39
 msgid "Shop Isle"
@@ -801,7 +801,7 @@ msgid "About us page - our advantages"
 msgstr ""
 
 #: inc/customizer/features/feature-about-us-controls.php:243
-#: inc/functions/setup.php:501 inc/sections/shop_isle_services_section.php:22
+#: inc/functions/setup.php:502 inc/sections/shop_isle_services_section.php:22
 #: template-about.php:325
 msgid "Ideas and concepts"
 msgstr ""
@@ -810,26 +810,26 @@ msgstr ""
 #: inc/customizer/features/feature-about-us-controls.php:249
 #: inc/customizer/features/feature-about-us-controls.php:254
 #: inc/customizer/features/feature-about-us-controls.php:259
-#: inc/functions/setup.php:502 inc/functions/setup.php:507
-#: inc/functions/setup.php:512 inc/functions/setup.php:517
+#: inc/functions/setup.php:503 inc/functions/setup.php:508
+#: inc/functions/setup.php:513 inc/functions/setup.php:518
 #: template-about.php:326 template-about.php:331 template-about.php:336
 #: template-about.php:341
 msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 msgstr ""
 
 #: inc/customizer/features/feature-about-us-controls.php:248
-#: inc/functions/setup.php:506 template-about.php:330
+#: inc/functions/setup.php:507 template-about.php:330
 msgid "Designs & interfaces"
 msgstr ""
 
 #: inc/customizer/features/feature-about-us-controls.php:253
-#: inc/functions/setup.php:511 inc/sections/shop_isle_services_section.php:33
+#: inc/functions/setup.php:512 inc/sections/shop_isle_services_section.php:33
 #: template-about.php:335
 msgid "Highly customizable"
 msgstr ""
 
 #: inc/customizer/features/feature-about-us-controls.php:258
-#: inc/functions/setup.php:516 inc/sections/shop_isle_services_section.php:34
+#: inc/functions/setup.php:517 inc/sections/shop_isle_services_section.php:34
 #: template-about.php:340
 msgid "Easy to use"
 msgstr ""
@@ -969,8 +969,8 @@ msgstr ""
 #: inc/customizer/features/feature-frontpage-slider-section-controls.php:48
 #: inc/customizer/features/feature-frontpage-slider-section-controls.php:55
 #: inc/customizer/features/feature-frontpage-slider-section-controls.php:62
-#: inc/functions/setup.php:346 inc/functions/setup.php:353
-#: inc/functions/setup.php:360 inc/sections/shop_isle_big_title_section.php:21
+#: inc/functions/setup.php:347 inc/functions/setup.php:354
+#: inc/functions/setup.php:361 inc/sections/shop_isle_big_title_section.php:28
 #: inc/sections/shop_isle_slider_section.php:26
 #: inc/sections/shop_isle_slider_section.php:33
 #: inc/sections/shop_isle_slider_section.php:40
@@ -978,7 +978,7 @@ msgid "WooCommerce Theme"
 msgstr ""
 
 #: inc/customizer/features/feature-frontpage-big-title-section-controls.php:89
-#: inc/sections/shop_isle_big_title_section.php:23
+#: inc/sections/shop_isle_big_title_section.php:30
 msgid "#"
 msgstr ""
 
@@ -1176,16 +1176,6 @@ msgstr ""
 msgid "Slide"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:90
-msgid "Slider shortcode"
-msgstr ""
-
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:91
-msgid ""
-"You can replace the homepage slider with any plugin you like, just copy the "
-"shortcode generated and paste it here."
-msgstr ""
-
 #: inc/customizer/features/feature-frontpage-video-section-controls.php:17
 msgid "Video section"
 msgstr ""
@@ -1210,7 +1200,17 @@ msgstr ""
 msgid "Logo"
 msgstr ""
 
-#: inc/customizer/features/flag-wporg.php:33 inc/functions/setup.php:130
+#: inc/customizer/features/feature-slider-shortcode.php:20
+msgid "Slider shortcode"
+msgstr ""
+
+#: inc/customizer/features/feature-slider-shortcode.php:21
+msgid ""
+"You can replace the homepage slider with any plugin you like, just copy the "
+"shortcode generated and paste it here."
+msgstr ""
+
+#: inc/customizer/features/flag-wporg.php:33 inc/functions/setup.php:131
 msgid "Primary Menu"
 msgstr ""
 
@@ -1222,27 +1222,27 @@ msgstr ""
 msgid "Keep the old static frontpage template?"
 msgstr ""
 
-#: inc/functions/setup.php:188
+#: inc/functions/setup.php:189
 msgid "Sidebar"
 msgstr ""
 
-#: inc/functions/setup.php:197
+#: inc/functions/setup.php:198
 msgid "Footer area 1"
 msgstr ""
 
-#: inc/functions/setup.php:206
+#: inc/functions/setup.php:207
 msgid "Footer area 2"
 msgstr ""
 
-#: inc/functions/setup.php:215
+#: inc/functions/setup.php:216
 msgid "Footer area 3"
 msgstr ""
 
-#: inc/functions/setup.php:224
+#: inc/functions/setup.php:225
 msgid "Footer area 4"
 msgstr ""
 
-#: inc/functions/setup.php:233
+#: inc/functions/setup.php:234
 msgid "Sidebar Shop Page"
 msgstr ""
 

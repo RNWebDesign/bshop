@@ -13,7 +13,7 @@ define( 'SHOP_ISLE_PHP_INCLUDE',  get_template_directory() . '/inc' );
  */
 
 if ( ! defined( 'SI_VERSION' ) ) {
-	define( 'SI_VERSION', '1.1.22' );
+	define( 'SI_VERSION', '1.1.23' );
 }
 
 /**
@@ -63,6 +63,7 @@ function shop_isle_filter_features( $array ) {
 		'/customizer/customizer-upsell/class-shopisle-customizer-upsell',
 		'/customizer/features/customizer-manager-pro',
 		'/customizer/features/customizer-manager-lite',
+		'/customizer/features/feature-slider-shortcode',
 		'/feature-page-description-meta',
 
 	));

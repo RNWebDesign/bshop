@@ -1,4 +1,9 @@
 
+### 2.2.17 - 22/05/2017
+**Changes:** 
+- Added a Shortcode option in Customizer to allow replacing the default slider with a custom one
+- Integration with Nivo Slider Lite
+
 ### 2.2.16 - 09/05/2017
 **Changes:** 
 - Fixed transport issues with the copyright option
