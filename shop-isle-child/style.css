@@ -1,0 +1,43 @@
+/*
+Theme Name:   	Shop Isle CHILD
+Theme URI:    	http://themeisle.com/themes/shop-isle/
+Description:  	Modified ShopIsle
+Author:       	Nielsen
+Author URI:		https://themeisle.com
+Template:		shop-isle
+Version:      	1.0.0
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  	shop-isle
+Tags:         	two-columns,one-column, grid-layout, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template,footer-widgets,theme-options, translation-ready,e-commerce,blog,portfolio, threaded-comments
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ShopIsle is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+
+YOU CAN FUCK THIS UP, THIS IS UPDATE PROOF
+
+*/
+
+.checkmarks li:before {
+    font-family: FontAwesome;
+    content: '\f00c';
+	margin:0 5px 0 -15px;
+	color: #2d2;
+
+}
+.checkmarks li {
+    margin-left: 22px;
+    margin-bottom: 3px;
+}
+
+.checkmarks {
+    margin-left: 0;
+    position: relative;
+    list-style-type: none;
+}
