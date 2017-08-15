@@ -1,4 +1,10 @@
 
+### 2.2.18 - 07/08/2017
+**Changes:** 
+- Added page builder templates
+- Added compatibility with Beaver Themer plugin
+- Fixed compatibility issues with WPML
+
 ### 2.2.17 - 22/05/2017
 **Changes:** 
 - Added a Shortcode option in Customizer to allow replacing the default slider with a custom one
